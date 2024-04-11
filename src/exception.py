@@ -1,4 +1,5 @@
 import sys
+from src.logger import logging
 # Sys in Python provides various functions and variables to manipulate different parts of the Python Runtime env.
 
 def error_message_detail(error, error_detail:sys):
