@@ -17,8 +17,8 @@ setup(
     name= "PipeLineDemo",
     version= "0.0.1",
     author= "Somdeep Sardar",
-    author_email= "sardarsomdeep123@gmail.com"
-    description= "A Demo E2E ML Pipeline"
+    author_email= "sardarsomdeep123@gmail.com",
+    description= "A Demo E2E ML Pipeline",
     install_requires = get_requirements("requirements.txt"),
     packages= find_packages()
 )
