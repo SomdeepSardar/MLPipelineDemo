@@ -1,2 +1,2 @@
 Create the directory
-    use conda activate venv/
+   ``` use conda activate venv/```
