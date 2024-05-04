@@ -35,10 +35,19 @@ def predict_datapoint():
         print("Before Prediction")
 
         predict_pipeline=PredictPipeline()
-        print("Mid Prediction")
+        # print("Mid Prediction")
+
         results=predict_pipeline.predict(pred_df)
-        print("after Prediction")
-        return render_template('home.html',results=results[0])
+        print(f"after Prediction {results}")
+
+        result = results[0]
+
+        if (result>100):
+            true_result = 100
+        else:
+            true_result = result
+
+        return render_template('home.html', results=result, true_results = true_result)
     
 
 if __name__=="__main__":
