@@ -40,7 +40,7 @@ def predict_datapoint():
         results=predict_pipeline.predict(pred_df)
         print(f"after Prediction {results}")
 
-        result = results[0]
+        result = round(results[0])
 
         if (result > 100):
             true_result = 100
@@ -49,7 +49,7 @@ def predict_datapoint():
         else:
             true_result = result
 
-        return render_template('home.html', results=result, true_results = true_result)
+        return render_template('home.html', results=results[0], true_results = true_result)
     
 
 if __name__=="__main__":
