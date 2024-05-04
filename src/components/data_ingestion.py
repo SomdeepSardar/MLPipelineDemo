@@ -23,16 +23,16 @@ class DataIngestion:
         self.ingestion_config = DataIngestionConfig()
     
     def initiate_data_ingestion(self):
-        logging.info("Entered the data ingestion method or component")
+        logging.info("Entered the data ingestion method or component inside data_ingestion")
         try:
             df = pd.read_csv('notebook\data\stud.csv')
-            logging.info("Read the dataset as df")
+            logging.info("Read the dataset as df inside data_ingestion")
 
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path), exist_ok=True)
 
             df.to_csv(self.ingestion_config.raw_data_path, index=False, header=True)
 
-            logging.info("Train Test split initiated")
+            logging.info("Train Test split initiated inside data_ingestion")
 
             train_set, test_set = train_test_split(df, test_size=0.2, random_state=42)
 
@@ -40,7 +40,7 @@ class DataIngestion:
 
             test_set.to_csv(self.ingestion_config.test_data_path, index=False, header=True)
 
-            logging.info("Ingestion of data completed")
+            logging.info("Ingestion of data completed inside data_ingestion")
 
             return(
                 self.ingestion_config.train_data_path,
