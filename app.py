@@ -42,8 +42,10 @@ def predict_datapoint():
 
         result = results[0]
 
-        if (result>100):
+        if (result > 100):
             true_result = 100
+        elif (result < 0):
+            true_result = 0
         else:
             true_result = result
 
