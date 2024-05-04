@@ -1,2 +1,54 @@
+<html>
+<head>
+    <title>Prediction page</title>
+</head>
+<style>
+    /* Base styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
 
-<h1>Welcome to the home page</h1>
+    h1 {
+  text-align: center;  /* Centers the text */
+  font-size: 2rem;     /* Increases the font size */
+  color: #d32323;         /* Sets the text color to dark gray */
+}
+
+    h2 {
+    margin-top: 50px;      /* Adds a top margin of 50 pixels */
+    font-weight: bold;   /* Makes the text bold and light */
+    text-align: center;
+    color: rgb(65, 62, 131);
+}
+
+    .predict-button {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: background-color 0.2s ease-in-out;
+  }
+
+    .predict-button:hover {
+    background-color: #0069d9; /* Darker blue on hover */
+  }
+    a{
+        display: block;
+        width: fit-content;
+        margin: auto;
+        text-align: left;
+        font-size: 18px
+    }
+</style>
+<body>
+    <h1>Welcome to the home page</h1>   
+    <h2>Students' Math's performance prediction website</h2> 
+    <a href="http://127.0.0.1:5000/predictdata" class="predict-button">Predict</a>
+</body>
+
+</html>
